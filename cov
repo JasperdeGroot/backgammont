@@ -1,0 +1,9 @@
+# coverage from bash
+
+. ./env.sh
+
+clear
+rm -fr COVERAGE/*
+$phpunit  $phpunitPhar --coverage-html COVERAGE $*
+
+

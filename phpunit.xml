@@ -1,0 +1,23 @@
+<phpunit colors="false" bootstrap="./tests/bootstrap.php">
+    <testsuites>
+        <testsuite name="unit">
+            <directory suffix=".php">php</directory>  
+            <filter>
+                <whitelist> 
+                    <directory suffix=".php">php</directory>                      
+                    <exclude>
+                        <directory>tests</directory>
+                    </exclude>
+                </whitelist>      
+            </filter>
+        </testsuite>       
+    </testsuites>
+    <filter>
+        <whitelist> 
+            <directory suffix=".php">php</directory>                      
+            <exclude>
+                <directory>tests</directory>
+            </exclude>
+        </whitelist>               
+    </filter>
+</phpunit>
