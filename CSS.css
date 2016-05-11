@@ -1,0 +1,47 @@
+body.inloggen{
+	background-image: url(BG.jpg);
+}
+
+#registreer-menu{
+	background-color:	mediumturquoise;
+	border-color:		#ae0000;
+	border-style:		outset;
+	border-width:		8px;
+	position:		fixed;
+	left:			50px;
+	top:			150px;
+	width:			200px;
+	height:			170px;
+	padding-left:		7px;
+}
+
+#inlog-menu{
+	background-color:	mediumturquoise;
+	border-color:		#ae0000;
+	border-style:		outset;
+	border-width:		8px;
+	position:		fixed;
+	left:			390px;
+	top:			150px;
+	width:			200px;
+	height:			170px;
+	padding-left:		7px;
+}
+
+#spelregelsblok{
+        background-color:	mediumturquoise;
+        opacity:                0.9;
+	border-color:		#ae0000;
+	border-style:		outset;
+	border-width:		8px;
+	position:		fixed;
+	left:			10px;
+	top:			150px;
+	width:			400px;
+	height:			200px;
+	padding-left:		7px;
+}
+
+#container {border:outset 6px ;border-color:red;margin-left:4px;padding:7px;width:300px;height:75px;background-color:mediumturquoise}
+#home {border:solid 6px ;margin:4px;width:60px;height:60px;background-color:#40FF00;float:left;}
+#blok2 {border:solid 6px ;margin:4px;padding:10px;width:180px;height:35px;background-color:lightgoldenrodyellow;float:right;}
