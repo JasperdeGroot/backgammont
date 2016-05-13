@@ -17,21 +17,20 @@
 
         </div>
 
-        <form name="registreren" action="connect.php" method="POST">
+        <form name="registreren" action="succes.php" method="POST">
             <div id="registreer-menu">
                 Naam</br><input type="text" name="naam"/></br>
                 Alias</br><input type="text" name="alias"/></br>
                 </br>
-                <input type="submit" value="registreren">
+                <input type="submit" value="registreren">	
             </div>
         </form>
         
         <form name="inloggen" action="wachtruimte.php" method="POST">
             <div id="inlog-menu">
-                Naam</br><input type="text" name="naam"/></br>
-                Alias</br><input type="text" name="alias"/></br>
+                Naam</br><input type="text" name="mynaam" id="mynaam"/></br>
+                Alias</br><input type="text" name="myalias" id="myalias"/></br>
                 </br>
-
                 <input type="submit" value="inloggen">
             </div>
         </form>
@@ -39,5 +38,28 @@
     </body>
 </html>
 
-http://www.w3schools.com/php/php_mysql_insert_multiple.asp misschien is dit handig
-http://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL ook handig
+hjttp://www.w3schools.com/php/php_mysql_insert_multiple.asp misschien is dit handig
+hjttp://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL ook handig
+hjttp://localhost/phpmyadmin/server_sql.php?db=&lang=nl&collation_connection=utf8mb4_unicode_ci&token=368a89427ff6df03fc9860792ccffb63 weg naar de database
+ 
+               <?php
+//                if (isset($_POST["verzend9"])) {
+//                    $_SESSION["ingelogd"] = 0;
+//                    $naam = $_POST["naam"];
+//                    if (!isset($_POST["naam"]) || !isset($_POST["alias"])) {
+//                        echo 'Misschien helpt het als je een gebruikersnaam en/of een wachtwoord invoerdt...';
+//                        exit;
+//                    }
+//
+//                    if ((($_POST["naam"] == "Monster") && ($_POST["alias"] == "Monster"))) {
+//
+//                        $_SESSION["naam"] = $_POST["naam"];
+//                        $_SESSION["ingelogd"] = 1;
+//                        echo "Welkom!! " . $_SESSION["naam"];
+//                        echo "<br> Klik <a href=gpagina.php class=hierknop>hier</a> om naar de super geheime pagina te gaan.";
+//                    } else {
+//                        echo "Probeer het opnieuw";
+//                        $_SESSION["ingelogd"] = 0;
+//                    }
+//                }
+                ?>

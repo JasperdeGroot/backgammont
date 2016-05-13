@@ -8,7 +8,7 @@ try {
     $conn = new PDO("mysql:host=localhost;dbname=backgammon", "backgammon", "1q2w3e4r");
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "succesvol verbonden" . PHP_EOL;
+    echo "succesvol verbonden </br>" . PHP_EOL;
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage() . PHP_EOL;
     $conn = null;
@@ -21,7 +21,7 @@ try {
     $sthInsert->execute(array("naam" => "$naam", "alias" => "$alias"));
 } catch (PDOException $ex) {
     if ($ex->getCode() == 23000) { //als je deze code krijgt zegt hij de echo
-        echo 'bestaat al' . PHP_EOL;
+        echo 'De door uw verzonnen gebruikersnaam/alias bestaat al </br>' . PHP_EOL;
     }
 }
 
