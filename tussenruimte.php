@@ -3,10 +3,10 @@ Even wachten...
 <?php
 include "inlogfuncties.php";
 
-if (aanmelden() == true){
-    header ('location: ./wachtruimte.php');
+if (aanmelden() === true){
+    header('location: ./wachtruimte.php');
     }
-    elseif (aanmelden() ==false){
+    elseif (aanmelden() === false){
         header('location: ./registreren.php');
     }
 
