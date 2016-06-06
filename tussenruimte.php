@@ -1,13 +1,14 @@
 Even wachten...
 
 <?php
-include "inlogfuncties.php";
+
+include "connect.php";
 
 if (aanmelden() === true){
-    header('location: ./wachtruimte.php');
+  header('location: ./wachtruimte.php');
     }
     elseif (aanmelden() === false){
-        header('location: ./registreren.php');
+        header('location: ./index.php');
     }
 
     
@@ -24,6 +25,10 @@ if (aanmelden() === true){
     }
     $conn->close();    
     
+//=========================================================================================================
+
+  
+//=========================================================================================================
 //                if (isset($_POST["verzend9"])) {
 //                    $_SESSION["ingelogd"] = 0;
 //                    $naam = $_POST["naam"];

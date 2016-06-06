@@ -3,7 +3,7 @@
     <head>
         <link rel="STYLESHEET" href="CSS.css" type="text/css">
         <title>
-            registreren.php
+            succes.php
         </title>
     </head>
 
@@ -11,7 +11,7 @@
 
 
         <div id="container">
-            <div id="house" style="float:left"><a href="registreren.php" title="Home"><img src="House.png" alt="home" width="70" height="70"></a></div>
+            <div id="house" style="float:left"><a href="index.php" title="Home"><img src="House.png" alt="home" width="70" height="70"></a></div>
             <div id="blok2"><h3><a href="spelregels.html" title="spelregels"> Spelregels </a></h3></div>
             <!--    <div id="blok3"><h3><a href="Jasper.html" title="jasper de groot's pagina">Jasper de Groot</a></h3></div> -->
 
@@ -23,7 +23,7 @@
                     include('connect.php');
                 ?>
                 </br>
-                Welkom, u heeft een account aangemaakt bij het backgammon-spel
+                Welkom, als u boven alleen "succesvol verbonden" ziet. Dan heeft u een account aangemaakt bij het backgammon-spel.
             </div>
 
     </body>
