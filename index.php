@@ -8,7 +8,7 @@
     </head>
 
     <body class="inloggen">
-j
+
 
         <div id="container">
             <div id="house" style="float:left"><a href="index.php" title="Home"><img src="House.png" alt="home" width="70" height="70"></a></div>
@@ -25,11 +25,11 @@ j
                 <input type="submit" value="registreren">	
             </div>
         </form>
- s       
+        
         <!--
         tussenRuimte.php (via POST data), check op valide gegevens ; nee include en excit
         ja:      wachtruimte.php?id=$datIsMijnId;  // $datIsMijnId van _POST['alias'] ; opvraagbaar met _GET['id']
-        -->j
+        -->
         
         <form name="inloggen" action="tussenruimte.php" method="POST">
             <div id="inlog-menu">
@@ -39,7 +39,7 @@ j
                 <input type="submit" value="inloggen">
             </div>
         </form>
-f
+
         <?php
 
 include_once 'connect.php';
