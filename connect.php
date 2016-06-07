@@ -4,14 +4,14 @@
 $naam = filter_input(INPUT_POST, 'naam');
 $alias = filter_input(INPUT_POST, 'alias');
 
-$DB_host = "localhost";
-$DB_user = "root";
-$DB_pass = "";
+$DB_host = "v14jgroot.helenparkhurst.net";
 $DB_name = "backgammon";
+$DB_user = "backgammon"; //er stond eerst root maar weet niet echt wat dat inhoud.
+$DB_pass = "1q2w3e4r";
 
 //connectie tussen de gebruiker en de server.
 try {
-    $conn = new PDO("mysql:host=localhost;dbname=backgammon", "backgammon", "1q2w3e4r");
+    $conn = new PDO("mysql:host=$DB_host;dbname=$DB_name", "$DB_user", "$DB_pass");
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "succesvol verbonden </br>" . PHP_EOL;
