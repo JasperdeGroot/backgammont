@@ -5,7 +5,7 @@ $naam = filter_input(INPUT_POST, 'naam');
 $alias = filter_input(INPUT_POST, 'alias');
 
 $DB_host = "v14jgroot.helenparkhurst.net";
-$DB_name = "backgammon";
+$DB_name = "v14jgroot_leden";
 $DB_user = "backgammon"; //er stond eerst root maar weet niet echt wat dat inhoud.
 $DB_pass = "1q2w3e4r";
 
