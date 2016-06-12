@@ -42,15 +42,18 @@
 
         <?php
 
-include_once 'connect.php';
-        if (!$user->is_loggedin()) {
-            $user->redirect('index.php');
-        }
-        $user_id = $_SESSION['user_session'];
-        $stmt = $DB_con->prepare("SELECT * FROM users WHERE user_id=:user_id");
-        $stmt->execute(array(":user_id" => $user_id));
-        $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
-        ?>
+        
+        
+// =====================================================================================================================================================================        
+
+//        if (!$user->is_loggedin()) {
+//            $user->redirect('tussenruimte.php');
+//        }
+//        $user_id = $_SESSION['user_session'];
+//        $stmt = $DB_con->prepare("SELECT * FROM users WHERE user_id=:user_id");
+//        $stmt->execute(array(":user_id" => $user_id));
+//        $userRow = $stmt->fetch(PDO::FETCH_ASSOC);
+//        ?>
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
         <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
@@ -62,21 +65,12 @@ include_once 'connect.php';
 
             <body>
 
-                <div class="header">
-                    <div class="left">
-                        <label><a href="http://www.codingcage.com/">Coding Cage - Programming Blog</a></label>
-                    </div>
-                    <div class="right">
-                        <label><a href="logout.php?logout=true"><i class="glyphicon glyphicon-log-out"></i> logout</a></label>
-                    </div>
-                </div>
-                <div class="content">
-                    welcome : <?php print($userRow['user_name']); ?>
+                <!-- welcome : <?php //print($userRow['user_name']); ?>
 
     </body>
 </html>
 
-hjttp://www.w3schools.com/php/php_mysql_insert_multiple.asp misschien is dit handig
-hjttp://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL ook handig
-hjttp://localhost/phpmyadmin/server_sql.php?db=&lang=nl&collation_connection=utf8mb4_unicode_ci&token=368a89427ff6df03fc9860792ccffb63 weg naar de database
+http://www.w3schools.com/php/php_mysql_insert_multiple.asp misschien is dit handig
+http://www.wikihow.com/Create-a-Secure-Login-Script-in-PHP-and-MySQL ook handig
+http://localhost/phpmyadmin/server_sql.php?db=&lang=nl&collation_connection=utf8mb4_unicode_ci&token=368a89427ff6df03fc9860792ccffb63 weg naar de database
  

@@ -46,10 +46,10 @@ if(isset($_POST['btn-login']))
             }
             ?>
             <div class="form-group">
-                <input type="text" class="form-control" name="txt_uname_email" placeholder="Username or E mail ID" required />
+                <input type="text" class="form-control" name="naam" placeholder="naam" required/>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" name="txt_password" placeholder="Your Password" required />
+                <input type="password" class="form-control" name="alias" placeholder="alias" required />
             </div>
             <div class="clearfix"></div><hr />
             <div class="form-group">

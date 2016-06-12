@@ -2,6 +2,10 @@ body.inloggen{
 	background-image: url(BG.jpg);
 }
 
+body.spelregels{
+    background-color:           mediumturquoise;
+}
+
 #registreer-menu{
 	background-color:	mediumturquoise;
 	border-color:		#ae0000;
@@ -37,8 +41,8 @@ body.inloggen{
 	position:		fixed;
 	left:			10px;
 	top:			150px;
-	width:			400px;
-	height:			200px;
+	width:			800px;
+	height:			1000px;
 	padding-left:		7px;
 }
 
