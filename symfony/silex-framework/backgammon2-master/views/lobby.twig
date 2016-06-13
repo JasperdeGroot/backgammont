@@ -1,0 +1,27 @@
+{% include 'header.twig' %}
+  <body>
+    <div class="container">      
+        <h1>Hallo, {{ name }}</h1>
+        <p>In de hal kan je wachten tot er iemand anders is om mee te spelen</p>
+        <p>Klik op een naam om samen naar het speel veld te gaan</p>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Alias</th>
+              <th>Registered in het laatste uur</th>
+            </tr>
+          </thead>
+          <tbody>
+              {% if list is defined %}
+              {% for line in list %}
+            <tr>
+              <td>{{ line.1 }}</td>
+              <td>{{ line.3 }}</td>
+            </tr>
+              {% endfor %}
+              {% endif %}
+          </tbody>
+        </table>
+    </div>
+{% include 'footer.twig' %}
+ 

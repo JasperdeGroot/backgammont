@@ -17,7 +17,7 @@
 
         </div>
 
-        <form name="registreren" action="succes.php" method="POST">
+        <form name="registreren" action="succes.php" method="POST">                 <!--registreer-form-->
             <div id="registreer-menu">
                 Naam</br><input type="text" name="naam"/></br>
                 Alias</br><input type="text" name="alias"/></br>
@@ -31,7 +31,7 @@
         ja:      wachtruimte.php?id=$datIsMijnId;  // $datIsMijnId van _POST['alias'] ; opvraagbaar met _GET['id']
         -->
         
-        <form name="inloggen" action="tussenruimte.php" method="POST">
+        <form name="inloggen" action="tussenruimte.php" method="POST">              <!--Inlog-form-->
             <div id="inlog-menu">
                 Naam</br><input type="text" name="naam" id="naam"/></br>
                 Alias</br><input type="text" name="alias" id="alias"/></br>
@@ -40,8 +40,8 @@
             </div>
         </form>
 
-        <h1>De planning van mijn applicatie-opdracht</h1>
-        <img src="planning.png" alt="home" width="70" height="70">
+    </br></br></br></br></br></br></br></br></br></br></br></br></br><h3>De planning van mijn applicatie-opdracht</h3>
+        <div id="planningblok"><img src="planning.png" width="600" height="400"></div>
             
             
             <?php
