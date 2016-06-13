@@ -6,6 +6,10 @@ body.spelregels{
     background-color:           mediumturquoise;
 }
 
+#planningblok{
+	padding-left:		7px;
+}
+
 #registreer-menu{
 	background-color:	mediumturquoise;
 	border-color:		#ae0000;

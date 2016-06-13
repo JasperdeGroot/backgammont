@@ -23,7 +23,7 @@
                     include('connect.php');
                 ?>
                 </br>
-                Welkom, als u boven alleen "succesvol verbonden" ziet. Dan heeft u een account aangemaakt bij het backgammon-spel.
+                Welkom <?php echo $_POST["naam"]; ?>, als u boven alleen "succesvol verbonden" ziet. Dan heeft u een account aangemaakt bij het backgammon-spel.
             </div>
 
     </body>

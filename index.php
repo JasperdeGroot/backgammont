@@ -40,7 +40,7 @@
             </div>
         </form>
 
-    </br></br></br></br></br></br></br></br></br></br></br></br></br><h3>De planning van mijn applicatie-opdracht</h3>
+    </br></br></br></br></br></br></br></br></br></br></br></br></br><h2>De planning van mijn applicatie-opdracht</h2>
         <div id="planningblok"><img src="planning.png" width="600" height="400"></div>
             
             
